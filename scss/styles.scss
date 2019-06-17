@@ -43,6 +43,23 @@ body
         border-bottom: 1px #dddddd solid; 
      }
 
+     #authors
+      {
+          img
+           {
+               margin: -50px;
+           }
+          .card:hover
+          {
+              background: $primary;
+              color: #ffffff;
+          }
+          .fab
+           {
+               color: #ffffff;
+           }
+       }
+
     @media(max-width: 768px)
     {
         #showcase
