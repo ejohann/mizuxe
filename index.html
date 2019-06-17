@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Bootstrap Mizuxe Theme</title>
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target="main-nav">
     
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand"><img src="img/mlogo.png" width="50" height="50" alt="">
         <h3 class="d-inline align-middle">Mizuke</h3>
@@ -382,6 +382,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script>
       $('#year').text(new Date().getFullYear());
+
+      //initialize scroll spy
+      $('body').scrollspy({target: '#main-nav'});
   </script>
 </body>
 </html>
